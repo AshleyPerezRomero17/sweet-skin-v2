@@ -7,7 +7,6 @@ import './css/Products.css';
 import './css/Index.css';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer.js';
 import Callout from './components/Callout.js';
@@ -16,6 +15,7 @@ import Contact from './components/Contact.js';
 import Products from './components/Products.js';
 import Index from './components/Index.js';
 import React from 'react';
+
 
 class App extends React.Component {
   constructor(props) {

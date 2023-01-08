@@ -1,13 +1,34 @@
-// first we're importing the express package
 const express = require("express");
-// then storing it in a var called app
 const app = express();
 
-// parse application/json, we expect to parse json bc of the .json() 
-app.use(bodyParser.json());
-// Add database connection
-// using get request method we're going to show the tasks when we call the index page
+const cors = require('cors');
+app.use(cors({
+    origin: '*'
+}));
+
+let mysql = require("mysql");
+
+const connection = mysql.createConnection({
+  host: "database-sweet-skin.c2c2iwesvmcx.us-east-1.rds.amazonaws.com",
+  user: "admin",
+  password: "Ap200310173!",
+  database: "sys",
+});
+
+connection.connect(function (err) {
+  if (err) {
+    return console.error("error connecting to mysql: " + err.message);
+  }
+});
+
 app.get(`/`, (req, res) => {
+  connection.query("SELECT * FROM Products", function (err, result) {
+    if (err) {
+      return console.error("error: " + err.message);
+    }
+
+    res.json(result);
+  });
 });
 
 app.listen(3001);
