@@ -1,0 +1,107 @@
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: #fae6e6;
+  font-family: 'Inter Tight', sans-serif;
+  padding-top: 174px;
+}
+
+
+/* media queries tablet styles only show under 800px*/
+@media only screen and (max-width: 800px) {
+  .main {
+      padding: 0;
+  }
+
+  #nav .side-nav {
+      top: 20px
+  }
+
+  #nav .side-nav li {
+      padding: 0 10px;
+  }
+
+  #nav li {
+      padding: 0 10px;
+  }
+
+  #flex-start {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+  }
+
+  .image-container {
+      flex-wrap: wrap;
+  }
+
+  .main--mobile {
+      display: block;
+  }
+
+  .main--desktop {
+      display: none;
+  }
+
+}
+/* mobile styles only show at or under 500px */
+@media only screen and (max-width: 500px) {
+  .image-content {
+      height: 300px;
+  }
+
+  .partners ul img {
+      height: 30px;
+  }
+
+  #nav li a {
+      font-size: 16px;
+  }
+
+  .image-container img {
+      width: 320px;
+      height: 400px;
+  }
+
+  .about-us__content {
+      padding: 40px;
+  }
+
+  .about-us h1 {
+      padding: 10px 60px;
+      margin-top: 200px;
+      font-size: 24px;
+  }
+
+  .contact-form {
+      width: 330px;
+  }
+
+  .contact-form input {
+      width: 330px;
+  }
+
+  .contact-form textarea {
+      width: 330px;
+  }
+
+  .radio label {
+      font-size: 16px;
+  }
+
+  .radio input {
+      width: 20px;
+  }
+
+  .hero-content {
+      margin-top: 0;
+  }
+
+  #products-container img {
+      width: 310px;
+  }
+
+  .product {
+      min-width: 310px;
+  }
+}

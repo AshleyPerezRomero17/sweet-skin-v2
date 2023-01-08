@@ -1,0 +1,76 @@
+.contact-form {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 430px;
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+
+.contact-form .break {
+    display: block;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.contact-form .radio div {
+    display: block;
+}
+
+.contact-form input {
+    width: 430px;
+    height: 40px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.feedback-container textarea {
+    border: none;
+}
+
+.feedback-container {
+    background-color: #ffdbd8;
+}
+
+.container {
+    padding: 120px 0;
+    background-image: url("/public/assets/img/plant-bg.webp");
+    height: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+/* allows you to put elements on top of or below other elements */
+    z-index: -1;  
+}
+
+.radio input {
+    width: 20px;
+    height: 18px;
+}
+
+.radio {
+    display: block;
+    margin: 20px 0;
+    background-color: #ffdbd8;
+    width: 100%;
+}
+
+.radio p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.button {
+    height: 60px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    max-width: 230px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #25d9cd;
+}

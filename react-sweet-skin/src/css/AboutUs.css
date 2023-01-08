@@ -1,0 +1,46 @@
+.about-us {
+    text-align: center;
+    height: 100%;
+    opacity: 0.9;
+}
+
+.about-us h1,
+.about-us h2 {
+    border-bottom: 5px solid #e2c1c1;
+    display: inline-block;
+    padding: 0 60px 10px 60px;
+}
+
+.about-us h1 {
+    color: #cb4631;
+    background-color: #f8d5d5;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 4px;
+    border: 3px solid #ecd4d9;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.about-us__content {
+    padding: 100px 80px 180px 80px;
+    background-color: #f8d5d5;
+    margin: 0 auto;
+    max-width: 800px;
+    letter-spacing: .5px;
+    border-radius: 4px;
+}
+
+.about-us__content p {
+    font-size: 18px;
+}
+
+.about-us {
+    background-image: url("/public/assets/img/fruit-bg.jpg");
+    height: inherit;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 400px
+}

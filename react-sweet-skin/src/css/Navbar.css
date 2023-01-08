@@ -1,0 +1,95 @@
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.side-nav {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    padding: 0;
+}
+
+#nav .center-nav {
+    margin: 0;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#nav li {
+    padding: 0 23px;
+    font-size: 20px;
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 120px;
+    background-color: white;
+    padding-bottom: 10px;
+    min-height: 110px;
+}
+
+#nav {
+    top: 44px;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav #selected a.active{
+    background-color: #f8d5d5;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#logo {
+    height: 50px;
+    width: 45px;
+}
+
+
+.callout {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #25d9cd;
+    height: 30px;
+    padding-top: 15px;
+    font-size: 12px;
+    overflow: hidden;
+}
+/* keyframe is a rule for the free shipping animation. 
+slidein is the name of the keyframe. transform is how the element is changed. 
+It starts off at zero and moves 100% to the right of screen on the x-axis*/
+@keyframes slidein {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+/* this is the styling for the slidin function. The first value is how long 
+the animation should take, the second value means the animation has a slow start.
+,third value is how long it should be delayed before it starts, in this case 
+0 seconds, fourth value is how many times the animation should be played.
+backwards is the direction the animation moves, then slidein is the name of the keyframe.*/
+.callout-text {
+    animation: 10s ease-in 0s infinite backwards slidein;
+}
+
+#nav .brand-name {
+    text-align: center;
+    color: #f0725e;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+}
