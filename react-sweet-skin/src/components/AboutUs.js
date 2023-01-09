@@ -1,7 +1,10 @@
 import React from 'react';
 
+// define a class-based React component called AboutUs
 class AboutUs extends React.Component {
-  render() {
+  // this method returns JSX that is rendered to the page
+render() {
+    // the JSX returned defines a main element with a class of "about-us"
     return (
         <main className="about-us">
             <div className="slide-up__img"></div>
@@ -26,7 +29,9 @@ class AboutUs extends React.Component {
             </div>
         </main>
     );
-  }
+}
 }
 
+// export the AboutUs component so it can be used in other parts of the application
 export default AboutUs;
+

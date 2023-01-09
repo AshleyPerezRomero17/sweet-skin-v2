@@ -64,7 +64,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/", {
+    fetch("http://54.227.122.38", {
         mode: 'cors',
         headers: {
           'Access-Control-Allow-Origin':'*'

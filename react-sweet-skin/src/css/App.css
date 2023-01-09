@@ -1,107 +1,132 @@
+/* This defines styles for elements with a class of "App" */
 .App {
-  margin: 0;
-  padding: 0;
-  background-color: #fae6e6;
-  font-family: 'Inter Tight', sans-serif;
-  padding-top: 174px;
+    // Removes the margin from the element
+    margin: 0;
+    // Removes the padding from the element
+    padding: 0;
+    // Sets the background color to #fae6e6
+    background-color: #fae6e6;
+    // Sets the font family to "Inter Tight" (sans-serif fallback)
+    font-family: 'Inter Tight', sans-serif;
+    // Adds padding to the top of the element
+    padding-top: 174px;
 }
 
-
-/* media queries tablet styles only show under 800px*/
+/* media queries tablet styles only show under 800px */
 @media only screen and (max-width: 800px) {
-  .main {
-      padding: 0;
-  }
+    /* This defines styles for elements with a class of "main" */
+    .main {
+        // Removes the padding from the element
+        padding: 0;
+    }
 
-  #nav .side-nav {
-      top: 20px
-  }
+    /* This defines styles for elements with an id of "nav" and a class of "side-nav" */
+    #nav .side-nav {
+        // Adds 20px of top padding to the element
+        top: 20px
+    }
 
-  #nav .side-nav li {
-      padding: 0 10px;
-  }
+    /* This defines styles for li elements within elements with an id of "nav" and a class of "side-nav" */
+    #nav .side-nav li {
+        // Adds 10px of padding to the right and left sides of the element
+        padding: 0 10px;
+    }
 
-  #nav li {
-      padding: 0 10px;
-  }
+    /* This defines styles for li elements within elements with an id of "nav" */
+    #nav li {
+        // Adds 10px of padding to the right and left sides of the element
+        padding: 0 10px;
+    }
 
-  #flex-start {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-  }
+    /* This defines styles for elements with an id of "flex-start" */
+    #flex-start {
+        // Makes the element position absolute
+        position: absolute;
+        // Adds 10px of top margin to the element
+        top: 10px;
+        // Adds 10px of left margin to the element
+        left: 10px;
+    }
 
-  .image-container {
-      flex-wrap: wrap;
-  }
+    /* This defines styles for elements with a class of "image-container" */
+    .image-container {
+        // Makes the element wrap its contents if there is not enough space on the same line
+        flex-wrap: wrap;
+    }
 
-  .main--mobile {
-      display: block;
-  }
+    /* This defines styles for elements with a class of "main--mobile" */
+    .main--mobile {
+        // Makes the element a block-level element
+        display: block;
+    }
 
-  .main--desktop {
-      display: none;
-  }
+    /* This defines styles for elements with a class of "main--desktop" */
+    .main--desktop {
+        // Makes the element not visible
+        display: none;
+    }
 
 }
+
+
 /* mobile styles only show at or under 500px */
 @media only screen and (max-width: 500px) {
-  .image-content {
-      height: 300px;
-  }
+    .image-content {
+        height: 300px;
+    }
 
-  .partners ul img {
-      height: 30px;
-  }
+    .partners ul img {
+        height: 30px;
+    }
 
-  #nav li a {
-      font-size: 16px;
-  }
+    #nav li a {
+        font-size: 16px;
+    }
 
-  .image-container img {
-      width: 320px;
-      height: 400px;
-  }
+    .image-container img {
+        width: 320px;
+        height: 400px;
+    }
 
-  .about-us__content {
-      padding: 40px;
-  }
+    .about-us__content {
+        padding: 40px;
+    }
 
-  .about-us h1 {
-      padding: 10px 60px;
-      margin-top: 200px;
-      font-size: 24px;
-  }
+    .about-us h1 {
+        padding: 10px 60px;
+        margin-top: 200px;
+        font-size: 24px;
+    }
 
-  .contact-form {
-      width: 330px;
-  }
+    .contact-form {
+        width: 330px;
+    }
 
-  .contact-form input {
-      width: 330px;
-  }
+    .contact-form input {
+        width: 330px;
+    }
 
-  .contact-form textarea {
-      width: 330px;
-  }
+    .contact-form textarea {
+        width: 330px;
+    }
 
-  .radio label {
-      font-size: 16px;
-  }
+    .radio label {
+        font-size: 16px;
+    }
 
-  .radio input {
-      width: 20px;
-  }
+    .radio input {
+        width: 20px;
+    }
 
-  .hero-content {
-      margin-top: 0;
-  }
+    .hero-content {
+        margin-top: 0;
+    }
 
-  #products-container img {
-      width: 310px;
-  }
+    #products-container img {
+        width: 310px;
+    }
 
-  .product {
-      min-width: 310px;
-  }
+    .product {
+        min-width: 310px;
+    }
 }
